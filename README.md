@@ -28,7 +28,7 @@ This application leverages a deep learning model trained on the MNIST dataset to
 
 ## Demo
 
-You can view a live demo of the application [here](#).
+You can view a live demo of the application [here](https://drive.google.com/file/d/1IRqt_5jzu-ZL1k0vnkaIGR0dQ5K1mJb8/view?usp=share_link).
 
 ## Installation
 
@@ -112,3 +112,8 @@ This project is licensed under the MIT License.
 
 - Special thanks to the creators of the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for providing an excellent resource for digit recognition.
 - Inspired by various machine learning tutorials and Flask documentation.
+
+
+
+<img width="1728" alt="Screenshot 2024-08-20 at 12 51 15" src="https://github.com/user-attachments/assets/4230783b-bcba-4ae7-a223-2d60bb0a9587">
+
