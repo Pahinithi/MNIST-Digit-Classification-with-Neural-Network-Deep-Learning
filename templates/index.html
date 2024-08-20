@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Prediction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #a2c2e2, #c2e2e2, #e2e2e2); /* Three-color gradient background */
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #ddd; /* Subtle border */
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn-custom {
+            background-color: #6c757d;
+            border: none;
+            color: #fff;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-custom:hover {
+            background-color: #5a6268;
+            transform: scale(1.05);
+        }
+        .form-group input {
+            border-radius: 10px;
+        }
+        .prediction {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #28a745; /* Green color for success */
+            font-weight: bold;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .custom-file-upload {
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digit Prediction</h1>
+        <form method="POST" action="/predict" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file" class="custom-file-upload">
+                    <input type="file" id="file" name="file" accept="image/*" required style="display: none;">
+                    Choose Image
+                </label>
+            </div>
+            <button type="submit" class="btn btn-custom">Upload and Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="prediction">
+            <p>{{ prediction }}</p>
+        </div>
+        {% endif %}
+        <div class="footer">
+            <p>Powered by Nithilan</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
