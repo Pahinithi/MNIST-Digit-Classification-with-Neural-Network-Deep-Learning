@@ -1,8 +1,4 @@
-Here's a detailed README template you can use for your digit prediction Flask application:
-
----
-
-# Digit Prediction Web Application
+# Digit Prediction with Neural Network Deep Learning
 
 This project is a web application that allows users to upload an image of a handwritten digit and predict the digit using a trained neural network model. The application is built using Flask and TensorFlow.
 
@@ -41,7 +37,7 @@ To run this application locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Pahinithi/Digit-Prediction-Flask-App.git
+   git clone https://github.com/Pahinithi/MNIST-Digit-Classification-with-Neural-Network-Deep-Learning
    cd Digit-Prediction-Flask-App
    ```
 
@@ -102,9 +98,6 @@ The model is trained on the MNIST dataset, which contains 60,000 training images
 Digit-Prediction-Flask-App/
 ├── templates/
 │   └── index.html        # HTML template for the application
-├── static/
-│   ├── css/
-│   └── js/
 ├── app.py                # Main Flask application file
 ├── model.h5              # Trained model file
 ├── requirements.txt      # Python dependencies
@@ -113,13 +106,9 @@ Digit-Prediction-Flask-App/
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. 
 
 ## Acknowledgments
 
 - Special thanks to the creators of the [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for providing an excellent resource for digit recognition.
 - Inspired by various machine learning tutorials and Flask documentation.
-
----
-
-You can modify this README as needed to better fit your project.
